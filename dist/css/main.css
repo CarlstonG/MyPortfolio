@@ -42,23 +42,28 @@
     padding: 0;
     background: black;
     list-style: none;
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, -100%, 0);
     transition: all 0.3s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #010a1b;
-    transform: translate3d(0, 100 0);
+    background: #0c0000;
+    transform: translate3d(0, 100%, 0);
     transition: all 0.3s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
-      width: 250px;
-      height: 250px;
+      width: 200px;
+      height: 200px;
       background: url("../img/profile.png");
       border-radius: 50%;
       border: solid 3px #5fe407;
       opacity: 100%; }
+  .menu .nav-item {
+    transform: translate3d(600px, 0, 0);
+    transition: all 0.3s ease-out; }
+    .menu .nav-item.show {
+      transform: translate3d(0, 0, 0); }
 
 * {
   box-sizing: border-box; }
