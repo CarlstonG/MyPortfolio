@@ -59,11 +59,67 @@
       border-radius: 50%;
       border: solid 3px #5fe407;
       opacity: 100%; }
-  .menu .nav-item {
+  .menu .nav-items {
     transform: translate3d(600px, 0, 0);
     transition: all 0.3s ease-out; }
-    .menu .nav-item.show {
+    .menu .nav-items.show {
       transform: translate3d(0, 0, 0); }
+    .menu .nav-items.current > a {
+      color: #5fe407; }
+  .menu .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: greenyellow;
+    transition: all 0.3s ease-out; }
+    .menu .nav-link:hover {
+      color: #010a1b; }
+
+.nav-items:nth-child(1) {
+  transition-delay: 0.1s; }
+
+.nav-items:nth-child(2) {
+  transition-delay: 0.2s; }
+
+.nav-items:nth-child(3) {
+  transition-delay: 0.3s; }
+
+.nav-items:nth-child(4) {
+  transition-delay: 0.4s; }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav, div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show, div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url("../img/profilesmall.jpg");
+      width: 150px;
+      height: 150px; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; } }
 
 * {
   box-sizing: border-box; }
@@ -86,7 +142,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(12, 0, 0, 0.5); }
+      background: rgba(12, 0, 0, 0.6); }
 
 h1,
 h2,

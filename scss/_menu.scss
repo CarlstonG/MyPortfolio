@@ -34,9 +34,7 @@ transform: rotate(45deg) translate(5px, 5px);
 &:nth-child(3) {
     transform: rotate(-45deg) translate(6.5px, -6.5px);
     }
-
 }
-
 }
 
 
@@ -93,7 +91,7 @@ background: $primary-color;
 transform: translate3d(0, 100%, 0);
 @include easeOut;
 
-&.show{
+&.show {//effects slide out/in
     transform: translate3d(0, 0, 0);
     }
 .portrait {
@@ -107,21 +105,44 @@ opacity: 100%;
 
 
 }
-.nav-item {
+.nav-items {
 transform: translate3d(600px, 0, 0);
 @include easeOut;
 
-&.show {
+&.show {//effects slide out/in
 transform: translate3d(0, 0, 0);
 
 
 }
+&.current > a {
+color: $tri-color;
 
 }
 
+}
+ .nav-link {
+display: inline-block;
+position: relative;
+font-size: 30px;
+text-transform: uppercase;
+padding: 1rem 0;
+font-weight: 300;
+color: #ffffff;
+text-decoration: none;
+text-shadow: greenyellow; 
+@include easeOut;
+
+&:hover {
+    color: $forth-color;
+}
+}
 }
 //delay effects
 
+@for $x from 1 through 4 {
+.nav-items:nth-child(#{$x}) {
+transition-delay: $x * 0.1s;
 
-    
+}
 
+}
