@@ -1,4 +1,4 @@
-$primary-color: rgb(12, 0, 0);
+$primary-color: rgb(15, 12, 12);
 $secondary-color: rgb(241, 245, 7);
 $forth-color: rgb(1, 10, 27);
 $tri-color: rgb(95, 228, 7);
@@ -28,6 +28,18 @@ $background-opacity: 0.6;
         }
     }
 
+    @function set-text-color($color) {
+        @if (lightness($color) > 40) {
+            @return #000;
+         } @else {
+                @return #ffffff;
+
+                } 
+
+
+        
+
+    }
 
     //media 
 
