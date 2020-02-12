@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "Responsive Portfolio Website",
   "main": "index.js",
+  "homepage": "http://CarlstonG.github.io/modern_portfolio",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recurvice"
+    "sass": "node-sass -w scss/ -o dist/css/ --recurvice",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Carlston Grefalde",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "node-sass": "^4.13.1"
   }
 }
