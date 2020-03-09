@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Responsive Portfolio Website",
   "main": "index.js",
-  "homepage": "http://CarlstonG.github.io/modern_portfolio",
+  "homepage": "http://CarlstonG.github.io/MyPortfolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recurvice",
     "deploy": "gh-pages -d dist"
