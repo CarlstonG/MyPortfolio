@@ -28,14 +28,14 @@ $background-opacity: 0.6;
         }
     }
 
-    @function set-text-color($color) {
-        @if (lightness($color) > 40) {
-            @return #000;
-         } @else {
-                @return #ffffff;
+ 
+@function set-text-color($color){
+    @if (lightness($color) > 40) {
+        @return #000;
 
-                } 
-
+    } @else {
+        @return #fff;
+    }
 
         
 
@@ -44,31 +44,25 @@ $background-opacity: 0.6;
     //media 
 
     @mixin mediaSm {
-@media screen and (max-width: 500px) {
-    @content;
-}
-        
-    }
-    @mixin mediaMd {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 500px){
             @content;
+        }    
         }
-                
+        
+        @mixin mediaMd {
+            @media screen and (max-width: 768px){
+                @content;
+            }    
             }
+        
             @mixin mediaLg {
-                @media screen and (min-width: 769px) and 
-                (max-width: 1170px){
+                @media screen and (max-width: 769px) and (max-width: 11170px){
                     @content;
-                
+                }    
                 }
-                        
-                    }
-
-                    @mixin mediaXl {
-                        @media screen and (min-width: 1171px) 
-                 {
-                            @content;
-                        
-                        }
-                                
-                            }
+        
+                @mixin mediaXl {
+                    @media screen and (min-width: 1171px){
+                        @content;
+                    }    
+                    }   

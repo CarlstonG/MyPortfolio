@@ -1,6 +1,6 @@
 @import 'config';
 @import 'menu';
-
+@import 'mobile';
 
 //I removed all the variables and xfer it to config and menu file. remote the underscore on import. //
 
@@ -232,4 +232,4 @@ color: rgb(7, 3, 3);
     height: 60px;
 }
 
-@import 'mobile';
+
